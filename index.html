@@ -340,6 +340,18 @@
             object-fit: cover;
             object-position: center;
         }
+
+        .publogo-report {
+            width: 200px;
+            height: 124px;
+            object-fit: cover;
+            object-position: center;
+            background: #f7f8fa;
+        }
+
+        .publogo-report.publogo-contain {
+            object-fit: contain;
+        }
         
         .publication:hover .publogo {
             transform: scale(1.02);
@@ -621,6 +633,10 @@
                 aspect-ratio: 2.55 / 1;
                 object-fit: cover;
             }
+
+            .publogo-report {
+                height: 190px;
+            }
             
             .experience-item,
             .blog-item,
@@ -857,32 +873,20 @@
             <div class="category-body">
 
             <div class="publication">
-                <img src="content/images/intern_m1_teaser.png" class="publogo" alt="InternVLA Teaser" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=InternVLA-M1'">
+                <img src="content/images/openwam_teaser.png" class="publogo publogo-report publogo-contain" alt="OpenWAM teaser" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=OpenWAM'">
                 <div class="pub-content">
-                    <strong><a href="https://arxiv.org/abs/2510.13778">InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy</a></strong>
-                    <div class="authors">Intern Robotics Team <span class="venue-badge techreport">Tech Report</span></div>
+                    <strong><a href="https://arxiv.org/abs/2609.07398">OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining</a></strong>
+                    <div class="authors">OpenWAM Team <span class="venue-badge techreport">Tech Report</span></div>
                     <div class="links">
-                        <a href="https://arxiv.org/abs/2510.13778"><i class="far fa-file-pdf"></i> Paper</a>
-                        <a href="https://github.com/InternRobotics/InternVLA-M1"><i class="fab fa-github"></i> Code <span class="github-stars" data-repo="InternRobotics/InternVLA-M1"><i class="fas fa-star"></i> 426</span></a>
+                        <a href="https://arxiv.org/abs/2609.07398"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="https://openwam-official.github.io" target="_blank"><i class="fas fa-globe"></i> Project</a>
+                        <a href="https://github.com/OpenWAM-Official/OpenWAM"><i class="fab fa-github"></i> Code <span class="github-stars" data-repo="OpenWAM-Official/OpenWAM"><i class="fas fa-star"></i> 937</span></a>
                     </div>
                 </div>
             </div>
 
             <div class="publication">
-                <img src="content/images/robodojo_official.png" class="publogo publogo-contain" alt="RoboDojo Benchmark" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=RoboDojo'">
-                <div class="pub-content">
-                    <strong><a href="https://arxiv.org/abs/2607.04434">RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies</a></strong>
-                    <div class="authors">AI MMLab Club <span class="venue-badge techreport">Tech Report</span></div>
-                    <div class="links">
-                        <a href="https://arxiv.org/abs/2607.04434"><i class="far fa-file-pdf"></i> Paper</a>
-                        <a href="https://robodojo-benchmark.com/" target="_blank"><i class="fas fa-globe"></i> Project</a>
-                        <a href="https://github.com/RoboDojo-Benchmark/RoboDojo"><i class="fab fa-github"></i> Code <span class="github-stars" data-repo="RoboDojo-Benchmark/RoboDojo"><i class="fas fa-star"></i> 437</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="publication">
-                <img src="content/images/joyecho15_official.jpg" class="publogo" alt="JoyAI-Echo-1.5" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=JoyAI-Echo-1.5'">
+                <img src="content/images/joyecho15_official.jpg" class="publogo publogo-report" alt="JoyAI-Echo-1.5" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=JoyAI-Echo-1.5'">
                 <div class="pub-content">
                     <strong><a href="https://arxiv.org/abs/2608.23383">JoyAI-Echo-1.5: Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds</a></strong>
                     <div class="authors">Echo Team <span class="venue-badge techreport">Tech Report</span></div>
@@ -895,13 +899,26 @@
             </div>
 
             <div class="publication">
-                <img src="content/images/joyecho.png" class="publogo" alt="JoyAI-Echo Teaser" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=JoyAI-Echo'">
+                <img src="content/images/robodojo_official.png" class="publogo publogo-report publogo-contain" alt="RoboDojo Benchmark" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=RoboDojo'">
                 <div class="pub-content">
-                    <strong><a href="https://www.researchgate.net/publication/405770309_JoyAI-Echo_Pushing_the_Frontier_of_Long_Audio-Visual_Generation">JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation</a></strong>
-                    <div class="authors">Echo Team <span class="venue-badge techreport">Tech Report</span></div>
+                    <strong><a href="https://arxiv.org/abs/2607.04434">RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies</a></strong>
+                    <div class="authors">AI MMLab Club <span class="venue-badge techreport">Tech Report</span></div>
                     <div class="links">
-                        <a href="https://www.researchgate.net/publication/405770309_JoyAI-Echo_Pushing_the_Frontier_of_Long_Audio-Visual_Generation"><i class="far fa-file-pdf"></i> Paper</a>
-                        <a href="https://github.com/jd-opensource/JoyAI-Echo"><i class="fab fa-github"></i> Code <span class="github-stars" data-repo="jd-opensource/JoyAI-Echo"><i class="fas fa-star"></i> 1,957</span></a>
+                        <a href="https://arxiv.org/abs/2607.04434"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="https://robodojo-benchmark.com/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+                        <a href="https://github.com/RoboDojo-Benchmark/RoboDojo"><i class="fab fa-github"></i> Code <span class="github-stars" data-repo="RoboDojo-Benchmark/RoboDojo"><i class="fas fa-star"></i> 437</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <img src="content/images/intern_m1_teaser.png" class="publogo publogo-report" alt="InternVLA Teaser" onerror="this.src='https://placehold.co/400x300/f0f2f5/888?text=InternVLA-M1'">
+                <div class="pub-content">
+                    <strong><a href="https://arxiv.org/abs/2510.13778">InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy</a></strong>
+                    <div class="authors">Intern Robotics Team <span class="venue-badge techreport">Tech Report</span></div>
+                    <div class="links">
+                        <a href="https://arxiv.org/abs/2510.13778"><i class="far fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/InternRobotics/InternVLA-M1"><i class="fab fa-github"></i> Code <span class="github-stars" data-repo="InternRobotics/InternVLA-M1"><i class="fas fa-star"></i> 426</span></a>
                     </div>
                 </div>
             </div>
